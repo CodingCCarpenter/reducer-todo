@@ -23,7 +23,8 @@ export const initialState = [
         });
       case "CLEAR":
           //clear completed items
-        return state.filter((item) => item.completed === false);
+        return state.filter((item) => !item.completed );
+        //!item.completed switch instead of === false
         //'catch-all' to return state untouched:
       default:
         return state;

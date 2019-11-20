@@ -14,11 +14,6 @@ function App() {
   // Takes a reducer function and the value for initial state
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  useEffect(() => {
-    //console.log the state
-    console.log(state);
-  }, [state]);
-
   return (
     <div className="App">
       <Header />

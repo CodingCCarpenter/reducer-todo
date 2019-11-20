@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+//FUTURE ITERATION- add checkboxes and give it ability to toggle completed
 const Todo = ({ item, id, completed, dispatch }) => (
   <div>
       {/* apply 'COMPLETE?' case at onClick*/}
@@ -9,7 +10,7 @@ const Todo = ({ item, id, completed, dispatch }) => (
       completed={completed}
     >
       {item}
-    </H2>
+    </H2>    
   </div>
 );
 
